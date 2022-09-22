@@ -1,0 +1,12 @@
+select {
+    min-width: 50%;
+    min-height: 50px;
+    background-color: rgb(102, 102, 148);
+    color: white;
+}
+.tdData{
+    vertical-align: top !important;
+}
+.tdTotal{
+    font-weight: bold;
+}

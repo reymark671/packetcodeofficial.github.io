@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Currency Exchange</title>
+</head>
+<link rel="stylesheet" href="main.css">
+<script language="JavaScript" src="ClientHandler.js"></script>
+<body onload="myGetCurrency()">
+
+<h1><center>Main Page</center></h1>
+    <center>
+        <select id="txtCurrency" name="txtCurrency" onchange="myGetCurrency()">
+            <option value="usd">USD</option>
+            <option value="eur">EUR</option>
+            <option value="aud">AUD</option>
+            <option value="cad">CAD</option>
+            <option value="chf">CHF</option>
+            <option value="nzd">NZD</option>
+            <option value="bgn">BGN</option>
+        </select>
+    </center>
+    <center>
+        <table id="tblDetails" name="tblDetails" width="700px" border="1">
+            <tr>
+                <th>Group 1</th>
+                <th>Group 2</th>
+                <th>Group 3</th>
+            </tr>
+            <tr>
+                <td id="grp1" class="tdData"></td>
+                <td id="grp2" class="tdData"></td>
+                <td id="grp3" class="tdData"></td>
+            </tr>
+            
+            <tr>
+                <td id="grp1Total" class="tdTotal"></td>
+                <td id="grp2Total" class="tdTotal"></td>
+                <td id="grp3Total" class="tdTotal"></td>
+            </tr>
+            <tr>
+                <td colspan="3" id="MaxRange"></td>
+            </tr>
+
+        </table>
+    </center>
+</body>
+</html>
